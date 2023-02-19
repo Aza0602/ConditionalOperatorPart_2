@@ -5,6 +5,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
 
     public static void task1 () {
@@ -56,6 +57,24 @@ public class Main {
             System.out.println("«" + year + " год является високосным».");
         } else {
             System.out.println("«" + year + " год не является високосным».");
+        }
+
+    }
+
+    public static void task4 () {
+
+        System.out.println("Задача 4");
+
+        int deliveryDistance = 95;
+
+        if (deliveryDistance < 20) {
+            System.out.println("Потребуется дней: 1.");
+        } else if (deliveryDistance >= 20 && deliveryDistance < 60) {
+            System.out.println("Потребуется дней: 2.");
+        } else if (deliveryDistance >= 60 && deliveryDistance < 100) {
+            System.out.println("Потребуется дней: 3.");
+        } else if (deliveryDistance >= 100) {
+            System.out.println("Свыше 100 км доставки нет.");
         }
 
     }
